@@ -11,7 +11,6 @@ import { useAppThemeContext } from '@/store/appTheme';
 import { useAuthContext } from '@/store/auth';
 
 import './TopNav.css';
-const logo = import ('@/utils/logo.png');
 const Auth = lazy(() => import('@/components/Auth'));
 
 type TopNavClick = {
@@ -144,8 +143,12 @@ export default function TopNav() {
             <TopNavigation
                 identity={{
                     href: '/',
-                    title: 'Insight Care',
-                    logoSrc: logo,
+                    title: (
+                        <>
+                            <img src='/logo.png' alt="Insight Care" style={{ height: '30px', marginRight: '10px' }} />
+                            Insight Care
+                        </>
+                    ),
                 }}
                 utilities={navUtils}
             />
