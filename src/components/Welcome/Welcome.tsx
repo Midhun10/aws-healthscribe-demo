@@ -22,13 +22,13 @@ function Welcome() {
         if (isUserAuthenticated) {
             return (
                 <TextContent>
-                    <p>This sample ReactJS-based web app shows the art of the possible in using AWS HealthScribe.</p>
+                    <p>Welcome to VST Inside Care HealthScribe.</p>
                     <p>
-                        AWS HealthScribe is a HIPAA-eligible service empowering healthcare software vendors to build
+                        VST Inside Care HealthScribe is a HIPAA-eligible service empowering healthcare software vendors to build
                         clinical applications that automatically generate clinical notes by analyzing patient-clinician
                         conversations.
                     </p>
-                    <p>Currently this demo allows you to:</p>
+                    <p>Currently this allows you to:</p>
                     <ul>
                         <li>
                             <Link onFollow={() => navigate('/conversations')}>View HealthScribe results</Link>,
@@ -101,7 +101,7 @@ function Welcome() {
     }
 
     return (
-        <ContentLayout header={<Header variant="h2">Demo Application Experience powered by AWS HealthScribe</Header>}>
+        <ContentLayout header={<Header variant="h2">Application Experience powered by VST Inside Care HealthScribe</Header>}>
             <Container footer={<Footer />}>
                 <Content />
             </Container>

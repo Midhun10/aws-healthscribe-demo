@@ -144,7 +144,7 @@ export default function TopNav() {
             <TopNavigation
                 identity={{
                     href: '/',
-                    title: 'Amazon Web Services',
+                    title: 'VST Inside Care',
                 }}
                 utilities={navUtils}
             />
