@@ -32,11 +32,11 @@ export default function SideNav({ activeHref }: SideNavProps) {
             href: '/generate',
         },
         { type: 'divider' },
-        {
-            type: 'link',
-            text: 'Settings',
-            href: '/settings',
-        },
+        // {
+        //     type: 'link',
+        //     text: 'Settings',
+        //     href: '/settings',
+        // },
         // { type: 'divider' },
         // {
         //     type: 'link',
@@ -61,7 +61,7 @@ export default function SideNav({ activeHref }: SideNavProps) {
     return (
         <SideNavigation
             activeHref={activeHref}
-            header={{ text: 'InsideCare HealthScribe', href: '/' }}
+            header={{ text: 'Insight Care HealthScribe', href: '/' }}
             items={sideNavItems}
             onFollow={(e) => {
                 e.preventDefault();

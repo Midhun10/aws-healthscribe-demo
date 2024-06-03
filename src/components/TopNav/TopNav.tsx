@@ -11,7 +11,7 @@ import { useAppThemeContext } from '@/store/appTheme';
 import { useAuthContext } from '@/store/auth';
 
 import './TopNav.css';
-
+const logo = import ('@/utils/logo.png');
 const Auth = lazy(() => import('@/components/Auth'));
 
 type TopNavClick = {
@@ -144,7 +144,8 @@ export default function TopNav() {
             <TopNavigation
                 identity={{
                     href: '/',
-                    title: 'VST Inside Care',
+                    title: 'Insight Care',
+                    logoSrc: logo,
                 }}
                 utilities={navUtils}
             />

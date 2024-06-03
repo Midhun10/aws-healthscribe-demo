@@ -77,8 +77,8 @@ export default function Settings() {
                     >
                         <SpaceBetween size={'m'}>
                             <SettingSelect
-                                formLabel="AWS HealthScribe Region"
-                                formDescription="As of April 13, 2024, AWS HealthScribe is available in the US East (N. Virginia) region."
+                                formLabel="HealthScribe Region"
+                                formDescription="As of April 13, 2024, HealthScribe is available in the US East (N. Virginia) region."
                                 optionKey={AppSettingKeys.Region}
                                 selectedOption={localSettings['app.region']}
                                 setLocalSettings={setLocalSettings}
@@ -87,7 +87,7 @@ export default function Settings() {
                                 formLabel="Amazon Comprehend Medical"
                                 formDescription={
                                     <>
-                                        Extend AWS HealthScribe with{' '}
+                                        Extend Insight Care HealthScribe with{' '}
                                         <Link
                                             href="https://aws.amazon.com/comprehend/medical/"
                                             external={true}
