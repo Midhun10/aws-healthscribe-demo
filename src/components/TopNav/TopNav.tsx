@@ -11,16 +11,8 @@ import { useAppThemeContext } from '@/store/appTheme';
 import { useAuthContext } from '@/store/auth';
 
 import './TopNav.css';
-import logo from '../../public/logo.png';
 
 const Auth = lazy(() => import('@/components/Auth'));
-
-const IdentityWithLogo: React.FC = () => (
-    <div style={{ display: 'flex', alignItems: 'center' }}>
-        <img src={logo} alt="Insight Care" style={{ height: '30px', marginRight: '10px' }} />
-        <span>Insight Care</span>
-    </div>
-);
 
 type TopNavClick = {
     detail: {
@@ -150,12 +142,13 @@ export default function TopNav() {
                 </Suspense>
             )}
             <TopNavigation
-                identity={{
-                    href: '/',
-                    title: <IdentityWithLogo />
-                }}
+                // identity={{
+                //     href: '/',
+                //     title: <IdentityWithLogo />
+                // }}
                 utilities={navUtils}
             />
+            <img className={styles.audioRecorderSpeakerIcon} src="/logo.png" alt={'Record Icon'} />
         </>
     );
 }
