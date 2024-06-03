@@ -142,13 +142,13 @@ export default function TopNav() {
                 </Suspense>
             )}
             <TopNavigation
-                // identity={{
-                //     href: '/',
-                //     title: <IdentityWithLogo />
-                // }}
+                identity={{
+                    href: '/',
+                    title: 'Insight Care'
+                }}
                 utilities={navUtils}
             />
-            <img className={styles.audioRecorderSpeakerIcon} src="/logo.png" alt={'Record Icon'} />
+            <img src="/logo.png" alt={'Record Icon'} />
         </>
     );
 }
