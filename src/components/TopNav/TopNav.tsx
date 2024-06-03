@@ -148,7 +148,7 @@ export default function TopNav() {
                 }}
                 utilities={navUtils}
             />
-            <img src="/logo.png" alt={'Record Icon'} />
+            <img src="/logo.png" alt={'Record Icon'} width="250px"/>
         </>
     );
 }
