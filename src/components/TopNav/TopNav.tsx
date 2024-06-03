@@ -148,8 +148,7 @@ export default function TopNav() {
                 }}
                 utilities={navUtils}
             />
-            <img src="/logo.png" alt={'Record Icon'} width="250px" style="padding-left: 45px;"
-/>
+            <img src="/logo.png" alt={'Record Icon'} width="250px" style="padding-left: 32px; margin-left: 17px;"/>
         </>
     );
 }
