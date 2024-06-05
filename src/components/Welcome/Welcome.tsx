@@ -41,7 +41,7 @@ function Welcome() {
                             <li>Structured medical terms</li>
                         </ul>
                         <li>
-                            Integrate HealthScribe output with Amazon Comprehend Medical
+                            Integrate HealthScribe output with Insight Care Comprehend Medical
                             {/* <Link external href="https://aws.amazon.com/comprehend/medical/">
                                 Amazon Comprehend Medical
                             </Link> */}
